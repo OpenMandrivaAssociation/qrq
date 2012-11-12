@@ -1,0 +1,34 @@
+diff --git a/Makefile b/Makefile
+index cfa3664..246574b 100644
+--- a/Makefile
++++ b/Makefile
+@@ -62,7 +62,7 @@ endif
+ all: qrq
+ 
+ qrq: $(OBJECTS)
+-	$(CC) -Wall -o $@ $^ -lm $(LDFLAGS)
++	$(CC) -Wall -o $@ $^ -lm $(LDFLAGS) -lpthread
+ 	
+ .c.o:
+ 	$(CC) -Wall $(CFLAGS) -c $<
+@@ -98,13 +98,13 @@ install: qrq
+ 	install -d -v                      $(DESTDIR)/share/qrq/
+ 	install -d -v                      $(DESTDIR)/share/man/man1/
+ 	install -d -v                      $(DESTDIR)/bin/
+-	install -s -m 0755 qrq             $(DESTDIR)/bin/
+-	install    -m 0755 qrqscore        $(DESTDIR)/bin/
+-	install    -m 0644 qrq.1           $(DESTDIR)/share/man/man1/
+-	install    -m 0644 callbase.qcb    $(DESTDIR)/share/qrq/
+-	install    -m 0644 english.qcb     $(DESTDIR)/share/qrq/
+-	install    -m 0644 qrqrc           $(DESTDIR)/share/qrq/
+-	install    -m 0644 toplist         $(DESTDIR)/share/qrq/
++	install -p -m 0755 qrq             $(DESTDIR)/bin/
++	install -p -m 0755 qrqscore        $(DESTDIR)/bin/
++	install -p -m 0644 qrq.1           $(DESTDIR)/share/man/man1/
++	install -p -m 0644 callbase.qcb    $(DESTDIR)/share/qrq/
++	install -p -m 0644 english.qcb     $(DESTDIR)/share/qrq/
++	install -p -m 0644 qrqrc           $(DESTDIR)/share/qrq/
++	install -p -m 0644 toplist         $(DESTDIR)/share/qrq/
+ 
+ 	
+ uninstall:
