@@ -1,6 +1,6 @@
 Name:           qrq
 Version:        0.3.0
-Release:        1
+Release:        2
 Summary:        Morse telegraphy trainer
 Group:          Education
 License:        GPLv2+
@@ -23,6 +23,7 @@ copy callsigns at high speeds, as needed for example for Contesting.
 %patch0 -p1
 
 %build
+export LDFLAGS="-lpthread"
 %make
 
 %install
@@ -35,3 +36,14 @@ make install DESTDIR=%{buildroot}%{_prefix} OSX_BUNDLE=NO
 %{_bindir}/qrqscore
 %{_mandir}/man?/*
 %{_datadir}/qrq
+
+
+%changelog
+* Sat Dec 24 2011 Alexander Khrukin <akhrukin@mandriva.org> 0.3.0-1
++ Revision: 745112
+- version update 0.3.0
+
+* Wed Nov 30 2011 Alexander Khrukin <akhrukin@mandriva.org> 0.2.1-1
++ Revision: 735806
+- imported package qrq
+

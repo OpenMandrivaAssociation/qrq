@@ -1,17 +1,7 @@
-diff --git a/Makefile b/Makefile
-index cfa3664..246574b 100644
---- a/Makefile
-+++ b/Makefile
-@@ -62,7 +62,7 @@ endif
- all: qrq
- 
- qrq: $(OBJECTS)
--	$(CC) -Wall -o $@ $^ -lm $(LDFLAGS)
-+	$(CC) -Wall -o $@ $^ -lm $(LDFLAGS) -lpthread
- 	
- .c.o:
- 	$(CC) -Wall $(CFLAGS) -c $<
-@@ -98,13 +98,13 @@ install: qrq
+diff -Naur qrq-0.2.1/Makefile qrq-0.2.1-mod/Makefile
+--- qrq-0.2.1/Makefile	2011-09-19 22:01:41.000000000 +0200
++++ qrq-0.2.1-mod/Makefile	2011-09-20 23:48:52.755694241 +0200
+@@ -90,13 +90,13 @@
  	install -d -v                      $(DESTDIR)/share/qrq/
  	install -d -v                      $(DESTDIR)/share/man/man1/
  	install -d -v                      $(DESTDIR)/bin/
