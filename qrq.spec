@@ -1,6 +1,6 @@
 Name:           qrq
 Version:        0.3.0
-Release:        2
+Release:        3
 Summary:        Morse telegraphy trainer
 Group:          Education
 License:        GPLv2+
@@ -10,6 +10,8 @@ Patch0:         qrq-0.2.1-makefile.patch
 
 BuildRequires:  ncurses-devel
 BuildRequires:  pulseaudio-devel
+
+%define debug_package %{nil}
 
 %description
 qrq is an open source morse telegraphy trainer for Linux and Unix operating
