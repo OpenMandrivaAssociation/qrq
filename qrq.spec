@@ -3,7 +3,7 @@
 Summary:	Morse telegraphy trainer
 Name:		qrq
 Version:	0.3.0
-Release:	6
+Release:	7
 Group:		Education
 License:	GPLv2+
 Url:		http://fkurz.net/ham/qrq.html
