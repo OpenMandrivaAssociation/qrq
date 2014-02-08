@@ -1,6 +1,6 @@
 Name:           qrq
 Version:        0.3.0
-Release:        3
+Release:        4
 Summary:        Morse telegraphy trainer
 Group:          Education
 License:        GPLv2+
