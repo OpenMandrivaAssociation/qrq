@@ -21,7 +21,7 @@ copy callsigns at high speeds, as needed for example for Contesting.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 export LDFLAGS="-lpthread"
