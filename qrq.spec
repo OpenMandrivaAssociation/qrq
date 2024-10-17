@@ -6,7 +6,7 @@ Version:	0.3.3
 Release:	2
 Group:		Education
 License:	GPLv2+
-Url:		http://fkurz.net/ham/qrq.html
+Url:		https://fkurz.net/ham/qrq.html
 Source0:	http://fkurz.net/ham/qrq/qrq-%{version}.tar.gz
 Patch0:		qrq-0.2.1-makefile.patch
 BuildRequires:	pkgconfig(libpulse)
