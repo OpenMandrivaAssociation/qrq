@@ -9,6 +9,7 @@ License:	GPLv2+
 Url:		https://fkurz.net/ham/qrq.html
 Source0:	http://fkurz.net/ham/qrq/qrq-%{version}.tar.gz
 Patch0:		qrq-0.2.1-makefile.patch
+BuildRequires:	make
 BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	pkgconfig(ncurses)
 
