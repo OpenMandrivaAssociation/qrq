@@ -2,13 +2,13 @@
 
 Summary:	Morse telegraphy trainer
 Name:		qrq
-Version:	0.3.3
-Release:	2
+Version:	0.3.5
+Release:	1
 Group:		Education
 License:	GPLv2+
 Url:		https://fkurz.net/ham/qrq.html
 Source0:	http://fkurz.net/ham/qrq/qrq-%{version}.tar.gz
-Patch0:		qrq-0.2.1-makefile.patch
+# dropped (no longer applies): Patch0:		qrq-0.2.1-makefile.patch
 BuildRequires:	make
 BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	pkgconfig(ncurses)
